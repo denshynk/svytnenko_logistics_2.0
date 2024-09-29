@@ -23,11 +23,11 @@ module.exports = {
 			primary: "var(--font-jetbrainsMono)",
 			theYoungest: "var(--font-theYoungest)",
 			mavka: "var(--font-mavka)",
-			roboto: "var(--font-roboto)"
+			roboto: "var(--font-roboto)",
 		},
 		extend: {
 			colors: {
-				primary: "#a21caf",
+				primary: "#0284c7",
 				accent: {
 					DEFAULT: "#FFD700",
 					hover: "#25a18e",
