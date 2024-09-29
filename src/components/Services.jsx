@@ -32,12 +32,12 @@ const services = [
 const Services = () => {
 	return (
 		<section>
-			<div className="container mx-auto xl:pt-8 xl:pb-8">
-				<div className="flex justify-center flex-wrap xl:flex-nowrap gap-6 max-w-[80vh] mx-auto xl:max-w-none">
+			<div className="container xl:pt-8 xl:pb-8">
+				<div className="flex justify-center flex-wrap xl:flex-nowrap flex-2 gap-6  mx-auto xl:max-w-none">
 					{services.map((service, index) => (
 						<motion.div
 							key={index}
-							className="relative bg-white bg-opacity-10 backdrop-blur-4xl rounded-lg shadow-lg p-6 w-[90%]"
+							className="relative bg-white bg-opacity-10 backdrop-blur-4xl rounded-lg shadow-lg p-6 w-[90%] max-h-[300px]"
 							id="container"
 							initial={{ opacity: 0, scale: 0.9 }}
 							animate={{ opacity: 1, scale: 1 }}

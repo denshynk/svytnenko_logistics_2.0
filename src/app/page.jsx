@@ -40,7 +40,7 @@ const Home = () => {
 			<div className="container mx-auto ">
 				<div className="flex flex-col items-center justify-between pb-8">
 					<motion.div
-						className="text-center mt-10"
+						className="text-center xl:mt-10"
 						initial={{ opacity: 0, y: -150, scale: 0.9 }}
 						animate={{ opacity: 1, y: 0, scale: 1 }}
 						transition={{ delay: 2, duration: 1, ease: "easeInOut" }}
@@ -56,7 +56,7 @@ const Home = () => {
 			</div>
 			<Services />
 			{/* Новый фрейм с Marquee и контактами */}
-			<div className="mt-20 xl:mt-2">
+			<div className=" xl:mt-2">
 				<Marquee className="" />
 
 				<div className="container mx-auto py-2">
