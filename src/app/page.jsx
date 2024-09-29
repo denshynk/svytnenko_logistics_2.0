@@ -35,14 +35,14 @@ const Home = () => {
 	}, []);
 
 	return (
-		<section className="h-screen">
+		<section className="h-screen scale-90">
 			{/* <Background /> */}
-			<div className="container mx-auto">
+			<div className="container mx-auto ">
 				<div className="flex flex-col items-center justify-between pb-8">
 					<motion.div
-						className="text-center mt-20"
-						initial={{ opacity: 0, y:-150, scale: 0.9 }}
-						animate={{ opacity: 1,y:0, scale: 1 }}
+						className="text-center mt-10"
+						initial={{ opacity: 0, y: -150, scale: 0.9 }}
+						animate={{ opacity: 1, y: 0, scale: 1 }}
 						transition={{ delay: 2, duration: 1, ease: "easeInOut" }}
 					>
 						<Image

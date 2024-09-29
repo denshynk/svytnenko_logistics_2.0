@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body
-				className={`${theYoungest.variable} ${jetbrainsMono.variable} ${mavka.variable}  ${roboto.variable}`}
+				className={`${theYoungest.variable} ${jetbrainsMono.variable} ${mavka.variable}  ${roboto.variable} `}
 			>
 				{/* <Header /> */}
 				<StairTransition />
