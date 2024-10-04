@@ -94,7 +94,9 @@ const Home = () => {
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ delay: 2, duration: 1, ease: "easeInOut" }}
 					>
-						<p className="font-roboto text-2xl">+380674659106</p>
+						<p className="font-roboto text-2xl tracking-[7px]">
+							+380674659106
+						</p>
 						<p className="font-roboto text-2xl">sergey@svyatnenko.com.ua</p>
 					</motion.div>
 				</div>

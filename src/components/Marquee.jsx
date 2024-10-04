@@ -17,13 +17,12 @@ const Marquee = () => {
 		"/assets/logos/4.png",
 		"/assets/logos/5.png",
 		"/assets/logos/6.png",
-		// "/assets/logos/7.png",
-		// спорт сервис
 		"/assets/logos/8.png",
 		"/assets/logos/9.png",
 		"/assets/logos/11.svg",
 		"/assets/logos/13.svg",
-	
+		"/assets/logos/16.svg",
+		"/assets/logos/17.png",
 	];
 
 	const [upperMarquee, setUpperMarquee] = useState([]);
