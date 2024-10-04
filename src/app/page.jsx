@@ -71,12 +71,12 @@ const Home = () => {
 					</motion.div>
 				</div>
 			</div>
-			<motion.div  className="flex justify-center mx-auto py-8">
+			<motion.div className="flex justify-center mx-auto py-8">
 				<ul className="flex text-center flex-wrap justify-center list-disc">
 					<li className="uppercase mx-4">International transportation</li>
 					<li className="uppercase mx-4">Goupage (LTL) from Spain</li>
 					<li className="uppercase mx-4">Customs formalities</li>
-					<li className="uppercase">
+					<li className="uppercase mx-4">
 						Warehousing: Spain, Italy, Poland, Ukraine
 					</li>
 				</ul>
