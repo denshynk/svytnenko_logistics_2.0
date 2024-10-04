@@ -32,13 +32,13 @@ const services = [
 const Services = () => {
 	return (
 		<section>
-			<div className="container xl:pt-8 xl:pb-8">
-				<div className="flex justify-center flex-wrap xl:flex-nowrap flex-2 gap-6  mx-auto xl:max-w-none">
+			<div className="container ">
+				<div className="flex justify-center flex-nowrap flex-2 xl:gap-24 xl:max-w-none">
 					{services.map((service, index) => (
 						<motion.div
 							key={index}
-							className="relative bg-white bg-opacity-10 backdrop-blur-4xl rounded-lg shadow-lg p-6 w-[90%] max-h-[300px]"
-							id="container"
+							className="relative px-4 md:p-6 w-[90%] max-h-[300px]"
+						
 							initial={{ opacity: 0, scale: 0.9 }}
 							animate={{ opacity: 1, scale: 1 }}
 							transition={{ delay: 2, duration: 1, ease: "easeInOut" }}
@@ -46,13 +46,13 @@ const Services = () => {
 							<div className="relative flex items-center text-center flex-col justify-between">
 								<Image
 									src={service.img}
-									width={120}
-									height={120}
+									width={140}
+									height={140}
 									className="mt-5"
 									alt={`${service.num} service`}
 								/>
 								<h3 className="h3 mt-10 drop-shadow-xl">
-									{service.title}
+									{/* {service.title} */}
 								</h3>
 							</div>
 						</motion.div>
