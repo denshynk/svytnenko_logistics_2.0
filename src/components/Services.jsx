@@ -39,7 +39,7 @@ const Services = () => {
 							key={index}
 							className="relative px-4 md:p-6 w-[90%] max-h-[300px]"
 						
-							initial={{ opacity: 0, scale: 0.9 }}
+							initial={{ opacity: 0, scale: 0.5 }}
 							animate={{ opacity: 1, scale: 1 }}
 							transition={{ delay: 2, duration: 1, ease: "easeInOut" }}
 						>

@@ -71,7 +71,12 @@ const Home = () => {
 					</motion.div>
 				</div>
 			</div>
-			<motion.div className="flex justify-center mx-auto py-8">
+			<motion.div
+				className="flex justify-center mx-auto py-8"
+				initial={{ opacity: 0, y: -150, scale: 0.9 }}
+				animate={{ opacity: 1, y: 0, scale: 1 }}
+				transition={{ delay: 2, duration: 1, ease: "easeInOut" }}
+			>
 				<ul className="flex text-center flex-wrap justify-center list-disc">
 					<li className="uppercase mx-4">International transportation</li>
 					<li className="uppercase mx-4">Goupage (LTL) from Spain</li>
@@ -90,14 +95,14 @@ const Home = () => {
 					{/* <h2 className="text-4xl font-bold mb-4 text-center">Contact Us</h2> */}
 					<motion.div
 						className="flex flex-col items-center space-y-2 "
-						initial={{ opacity: 0, scale: 0.9 }}
+						initial={{ opacity: 0, scale: 0.5 }}
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ delay: 2, duration: 1, ease: "easeInOut" }}
 					>
-						<p className="font-roboto text-2xl tracking-[7px]">
-							+380674659106
+						<p className="font-roboto text-2xl tracking-[7px]">+380674659106</p>
+						<p type="email" className="font-roboto text-2xl">
+							sergey@svyatnenko.com.ua
 						</p>
-						<p className="font-roboto text-2xl">sergey@svyatnenko.com.ua</p>
 					</motion.div>
 				</div>
 				<Marquee />
