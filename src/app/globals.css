@@ -4,16 +4,13 @@
 
 @layer base {
 	body {
-
 		@apply font-roboto bg-primary text-white leading-loose;
-		height: 100%;
-		background-image: url('../../public/VLA_7012.jpg');
+		background-image: url("../../public/VLA_7012.jpg");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
 		overflow-y: auto;
-
-	
+		-webkit-overflow-scrolling: touch;
 	}
 
 	.h1 {
@@ -39,7 +36,7 @@
 
 #container {
 	width: 40vw;
-	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
 	border-radius: 5px;
 	position: relative;
 	z-index: 1;
@@ -63,7 +60,7 @@
 
 #container2 {
 	padding: 10px;
-	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
 	border-radius: 5px;
 	position: relative;
 	z-index: 1;
