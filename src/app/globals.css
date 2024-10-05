@@ -6,6 +6,7 @@
 	body {
 
 		@apply font-roboto bg-primary text-white leading-loose;
+		 min-height: -webkit-fill-available;
 		background-image: url('../../public/VLA_7012.jpg');
 		background-size: cover;
 		background-position: center;
