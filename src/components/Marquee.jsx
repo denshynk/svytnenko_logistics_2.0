@@ -23,6 +23,8 @@ const Marquee = () => {
 		"/assets/logos/13.svg",
 		"/assets/logos/16.svg",
 		"/assets/logos/17.png",
+		"/assets/logos/18.png",
+		"/assets/logos/19.png",
 	];
 
 	const [upperMarquee, setUpperMarquee] = useState([]);
@@ -52,6 +54,7 @@ const Marquee = () => {
 							return (
 								<img
 									key={index}
+								
 									className="max-h-[80px] mr-10"
 									src={image}
 									alt=""

@@ -5,7 +5,7 @@
 @layer base {
 	body {
 
-		@apply font-roboto text-white leading-loose;
+		@apply font-roboto bg-primary text-white leading-loose;
 		background-image: url('../../public/VLA_7012.jpg');
 		background-size: cover;
 		background-position: center;
