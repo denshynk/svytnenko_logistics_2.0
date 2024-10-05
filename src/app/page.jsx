@@ -35,7 +35,7 @@ const Home = () => {
 	}, []);
 
 	return (
-		<section className="h-screen flex md:justify-center mt md:m-0 md:gap-0 items-center flex-col overflow-hidden mx-5 overflow-y-hidden">
+		<section className="md:h-screen h-full flex md:justify-center mt md:m-0 md:gap-0 items-center flex-col overflow-hidden mx-5">
 			{/* <Background /> */}
 			<div className="container mx-auto mt-10 md:mt-0">
 				<div className="flex flex-col items-center justify-between pb-8">

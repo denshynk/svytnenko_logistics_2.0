@@ -34,7 +34,7 @@ const Marquee = () => {
 	}, []);
 
 	return (
-		<div className="container mx-auto">
+		<div className="container mx-auto pb-10 md:pb-0">
 			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{
