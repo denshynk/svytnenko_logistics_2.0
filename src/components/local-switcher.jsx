@@ -22,7 +22,7 @@ export default function LocalSwitcher() {
 		<motion.button
 			onClick={toggleLanguage}
 			disabled={isPending}
-			className="absolute top-5 right-10"
+			className="absolute top-1 right-5 md:top-5 md:right-10"
 			initial={{ opacity: 0, x: 100, scale: 0.9 }}
 			animate={{ opacity: 1, x: 0, scale: 1 }}
 			transition={{ delay: 2, duration: 1, ease: "easeInOut" }}
