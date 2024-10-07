@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import React, { useEffect, useState, useMemo } from "react";
 
-// Функция для рандомизации массива
+// Function to shuffle an array
 const shuffleArray = (array) => {
 	for (let i = array.length - 1; i > 0; i--) {
 		const j = Math.floor(Math.random() * (i + 1));
@@ -11,27 +12,32 @@ const shuffleArray = (array) => {
 };
 
 const Marquee = () => {
-	const initialMarquee = [
-		"/assets/logos/2.svg",
-		"/assets/logos/15.png",
-		"/assets/logos/4.png",
-		"/assets/logos/5.png",
-		"/assets/logos/6.png",
-		"/assets/logos/8.png",
-		"/assets/logos/9.png",
-		"/assets/logos/11.svg",
-		"/assets/logos/13.svg",
-		"/assets/logos/16.svg",
-		"/assets/logos/17.png",
-		"/assets/logos/18.png",
-		"/assets/logos/19.png",
-	];
+	// Memoize the initial array to avoid re-creation on every render
+	const initialMarquee = useMemo(
+		() => [
+			"/assets/logos/2.svg",
+			"/assets/logos/15.png",
+			"/assets/logos/4.png",
+			"/assets/logos/5.png",
+			"/assets/logos/6.png",
+			"/assets/logos/8.png",
+			"/assets/logos/9.png",
+			"/assets/logos/11.svg",
+			"/assets/logos/13.svg",
+			"/assets/logos/16.svg",
+			"/assets/logos/17.png",
+			"/assets/logos/18.png",
+			"/assets/logos/19.png",
+		],
+		[]
+	);
 
 	const [upperMarquee, setUpperMarquee] = useState([]);
 
+	// Shuffle the array when the component mounts
 	useEffect(() => {
 		setUpperMarquee(shuffleArray([...initialMarquee]));
-	}, []);
+	}, [initialMarquee]);
 
 	return (
 		<div className="container mx-auto pb-10 md:pb-0">
@@ -41,9 +47,10 @@ const Marquee = () => {
 					opacity: 1,
 					transition: { delay: 2, duration: 0.4, ease: "easeInOut" },
 				}}
-				className=" mt-8"
+				className="mt-8"
 			>
 				<div className="flex">
+					{/* First Marquee Animation */}
 					<motion.div
 						initial={{ x: 0 }}
 						animate={{ x: "-100%" }}
@@ -52,16 +59,20 @@ const Marquee = () => {
 					>
 						{upperMarquee.map((image, index) => {
 							return (
-								<img
+								<Image
 									key={index}
-								
-									className="max-h-[80px] mr-10"
+									className="max-h-[80px] h-auto w-[100%] mr-10"
 									src={image}
-									alt=""
+									alt={`Logo ${index}`}
+									sizes="100vw"
+									width={0} // Add width
+									height={0} // Add height
 								/>
 							);
 						})}
 					</motion.div>
+
+					{/* Duplicate Marquee for seamless scrolling */}
 					<motion.div
 						initial={{ x: 0 }}
 						animate={{ x: "-100%" }}
@@ -70,11 +81,14 @@ const Marquee = () => {
 					>
 						{upperMarquee.map((image, index) => {
 							return (
-								<img
+								<Image
 									key={index}
-									className="max-h-[80px] mr-10"
+									className="max-h-[80px] h-auto w-[100%] mr-10"
 									src={image}
-									alt=""
+									alt={`Logo ${index}`}
+									sizes="100vw"
+									width={0} // Add width
+									height={0} // Add height
 								/>
 							);
 						})}
