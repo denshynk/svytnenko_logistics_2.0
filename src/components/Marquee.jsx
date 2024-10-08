@@ -59,14 +59,12 @@ const Marquee = () => {
 					>
 						{upperMarquee.map((image, index) => {
 							return (
-								<Image
+								<img
 									key={index}
-									className="max-h-[80px] h-auto w-[100%] mr-10"
+									className="max-h-[80px] mr-10"
 									src={image}
 									alt={`Logo ${index}`}
-									sizes="100vw"
-									width={0} // Add width
-									height={0} // Add height
+								
 								/>
 							);
 						})}
@@ -81,14 +79,12 @@ const Marquee = () => {
 					>
 						{upperMarquee.map((image, index) => {
 							return (
-								<Image
+								<img
 									key={index}
-									className="max-h-[80px] h-auto w-[100%] mr-10"
+									className="max-h-[80px] mr-10"
 									src={image}
 									alt={`Logo ${index}`}
-									sizes="100vw"
-									width={0} // Add width
-									height={0} // Add height
+								
 								/>
 							);
 						})}
