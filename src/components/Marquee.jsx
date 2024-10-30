@@ -55,7 +55,7 @@ const Marquee = () => {
 					<motion.div
 						initial={{ x: 0 }}
 						animate={{ x: "-100%" }}
-						transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
+						transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
 						className="flex"
 					>
 						{/* First Marquee */}

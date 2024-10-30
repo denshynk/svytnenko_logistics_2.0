@@ -10,7 +10,7 @@ import LocalSwitcher from "@/components/local-switcher";
 const Home = () => {
 	const t = useTranslations("Home");
 	return (
-		<section className="md:h-screen h-full flex md:justify-center md:gap-0 flex-col overflow-hidden">
+		<section className="md:h-screen h-screen flex md:justify-center md:gap-0 flex-col overflow-hidden ">
 			<LocalSwitcher />
 			<div className="flex items-center flex-col mx-5 md:mx-0">
 				<div className="container mx-auto mt-10 md:mt-0">
