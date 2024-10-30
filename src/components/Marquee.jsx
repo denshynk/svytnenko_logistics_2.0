@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Image from "next/image";
 import React, { useEffect, useState, useMemo } from "react";
 
 // Function to shuffle an array
@@ -28,6 +27,8 @@ const Marquee = () => {
 			"/assets/logos/17.png",
 			"/assets/logos/18.png",
 			"/assets/logos/19.png",
+			"/assets/logos/20.svg",
+			"/assets/logos/21.svg",
 		],
 		[]
 	);
@@ -40,54 +41,49 @@ const Marquee = () => {
 	}, [initialMarquee]);
 
 	return (
-		<div className="container mx-auto pb-10 md:pb-0">
+		<div className="pb-10 md:pb-0">
 			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{
 					opacity: 1,
 					transition: { delay: 2, duration: 0.4, ease: "easeInOut" },
 				}}
-				className="mt-8"
+				className="mt-8 overflow-hidden" // Ensure overflow is hidden
 			>
 				<div className="flex">
-					{/* First Marquee Animation */}
+					{/* Marquee Animation Container */}
 					<motion.div
 						initial={{ x: 0 }}
 						animate={{ x: "-100%" }}
-						transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-						className="flex flex-shrink-0"
+						transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
+						className="flex"
 					>
-						{upperMarquee.map((image, index) => {
-							return (
-								<img
-									key={index}
-									className="max-h-[80px] mr-10"
-									src={image}
-									alt={`Logo ${index}`}
-								
-								/>
-							);
-						})}
-					</motion.div>
-
-					{/* Duplicate Marquee for seamless scrolling */}
-					<motion.div
-						initial={{ x: 0 }}
-						animate={{ x: "-100%" }}
-						transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-						className="flex flex-shrink-0"
-					>
-						{upperMarquee.map((image, index) => {
-							return (
-								<img
-									key={index}
-									className="max-h-[80px] mr-10"
-									src={image}
-									alt={`Logo ${index}`}
-								
-								/>
-							);
-						})}
+						{/* First Marquee */}
+						<div className="flex flex-shrink-0">
+							{upperMarquee.map((image, index) => {
+								return (
+									<img
+										key={index}
+										className="max-h-[80px] mr-10"
+										src={image}
+										alt={`Logo ${index}`}
+									/>
+								);
+							})}
+						</div>
+						{/* Duplicate Marquee for seamless scrolling */}
+						<div className="flex flex-shrink-0">
+							{upperMarquee.map((image, index) => {
+								return (
+									<img
+										key={index}
+										className="max-h-[80px] mr-10"
+										src={image}
+										alt={`Logo ${index}`}
+									/>
+								);
+							})}
+						</div>
 					</motion.div>
 				</div>
 			</motion.div>
