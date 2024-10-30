@@ -51,7 +51,7 @@ export default async function RootLayout({ children }) {
 	 const locale = await getLocale();
 	 const messages = await getMessages();
 	return (
-		<html lang={locale} className="h-full">
+		<html lang={locale} >
 			<body
 				className={`${theYoungest.variable} ${jetbrainsMono.variable} ${mavka.variable}  ${roboto.variable} `}
 			>
