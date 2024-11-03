@@ -1,6 +1,7 @@
 "use client";
 
 import Marquee from "@/components/Marquee";
+import NewMarquee from "@/components/NewMarquee";
 import Services from "@/components/Services";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -81,8 +82,8 @@ const Home = () => {
 							</p>
 						</motion.div>
 					</div>
-					<Marquee />
 				</div>
+				<NewMarquee />
 			</div>
 		</section>
 	);
