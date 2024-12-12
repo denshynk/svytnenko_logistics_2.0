@@ -4,7 +4,6 @@ import React from "react";
 const NewMarquee = () => {
 	const initialMarquee = [
 		"/assets/logos/2.svg",
-		"/assets/logos/15.png",
 		"/assets/logos/4.png",
 		"/assets/logos/5.png",
 		"/assets/logos/6.png",
