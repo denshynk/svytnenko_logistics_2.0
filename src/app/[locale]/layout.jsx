@@ -5,7 +5,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 
 // components
-import Header from "@/components/Header";
+import { Analytics } from "@vercel/analytics/next";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
 
@@ -59,6 +59,7 @@ export default async function RootLayout({ children }) {
 				<NextIntlClientProvider messages={messages}>
 					<StairTransition />
 					<PageTransition> {children}</PageTransition>
+					<Analytics />
 				</NextIntlClientProvider>
 			</body>
 		</html>
