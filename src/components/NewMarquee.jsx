@@ -18,6 +18,7 @@ const NewMarquee = () => {
 		"/assets/logos/20.svg",
 		"/assets/logos/21.svg",
 		"/assets/logos/22.png",
+		"/assets/logos/23.png",
 	];
 
 	return (
